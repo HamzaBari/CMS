@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,intial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="CMSStyle.css">
+
+<title>CMS</title>
+    
+
+</head>
+<body>
+
+  <!--header-->
+<div class="header">
+  <a>Content Managment System</a>
+  </div>
+
+  <!--Navigationbar-->
+<div class="navbar">
+  <a href="Home.html">Home</a>
+  <a href="View and Add.html">View and Add Product</a>
+  <a href="Customerorders.html">View and Delete Orders</a>
+</div>
+
+<!--Login credential and add staff button to add new staff-->
+<div class="box">
+<form action="Home.php" method="post" class="text">
+  Staff-id: <input type="text" name="Staff-id" required><br>
+  Password: <input type="password" name="password" required><br>
+  <button onclick="login">Login</button>
+  <button onclick="register">Add Staff</button>
+</form>
+</div>
+
+<!--footer-->
+<div class="footer">
+  <a>Content Managment System</a>
+</div>
+
+</body>
+</html>
