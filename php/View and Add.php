@@ -1,29 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width,intial-scale=1, shrink-to-fit=no">
+<?php
+    //Include the PHP functions to be used on the page 
+    include('common.php'); 
+	
+    //Output header and navigation 
+    outputHeader("Content Managment System");
+    outputBannerNavigation("CMS");
+?>
 
-<link rel="stylesheet" type="text/css" href="css/CMSStyle.css">
-<title>CMS</title>
-    
-
-</head>
-<body>
-
-<!--header-->
-<div class="header">
-  <a>Content Managment System</a>
-  </div>
-
-  <!--Navigationbar -->
-<div class="navbar">
-  <a href="Home.html">Home</a>
-  <a href="View and Add.html">View and Add Product</a>
-  <a href="View and Delete orders.html">View and Delete Orders</a>
-</div>
-
+<!-- Contents of the page -->
 <!--To view, Add and update product to website-->
-<div contenteditable>
 <div class="box">
 <table>
   <tr>
@@ -70,17 +55,18 @@
     <td>USB PORT CARD</td>
     <td>£40</td>
     <td>YOU CAN ADD FOUR USB 3.0 PORTS TO YOUR DESKTOP TO THE 4-PORT USB 3.0 CARD</td>
-  </tr></div>
+  </tr>
   <tr>
     <td> <button><a href="Add.html">Add Product</a></button></td>
+    <td><button><a href="update.html">Update Products</a></button></td>
   </tr>
 </table>
 </div>
 
-<!--footer-->
 <div class="footer">
-  <a>Content Managment System</a>
+<a>Content Managment System</a>
 </div>
 
-</body>
-</html>
+<?php
+    //Output the footer
+    outputFooter();
